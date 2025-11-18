@@ -13,6 +13,27 @@
             min-height: 100vh;
             margin: 0;
         }
+        .login-container {
+            background-color: #fff;
+            width: 350px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden; 
+            position: relative;
+            text-align: center;
+        }
+        .login-form {
+            padding: 20px 30px;
+        }
+        .input-group {
+            position: relative;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
   </style>
 </head>
 <body>
@@ -22,4 +43,22 @@
                 <img src="avatar.png" alt="Avatar Usuária">
             </div>
         </div>
+        <form class="login-form">
+            <div class="input-group">
+                <input type="text" placeholder="Nome de usuario">
+            </div>
+
+            <div class="input-group">
+                
+                <input type="password" placeholder="Senha">
+                <a href="#" class="forgot-password">Esqueceu a Senha ?</a>
+            </div>
+
+            <button type="submit" class="sign-in-btn">Entrar</button>
+        </form>
+
+        <p class="register-text">
+            Não Tem uma conta ? <a href="#" class="register-link">Registre-se</Registre-se></a>
+        </p>
+    </div>
 </body>
